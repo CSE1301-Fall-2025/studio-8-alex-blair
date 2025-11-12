@@ -4,18 +4,16 @@ import support.cse131.NotYetImplementedException;
 
 public class MultipleChoiceQuestion extends Question {
 
+
+	private String []choices;
+	
 	/**
 	 * Constructor
-	 * @param prompt
-	 * @param answer
-	 * @param points
-	 * @param choices
+ 
 	 */
 	public MultipleChoiceQuestion(String prompt, String answer, int points, String[] choices) {
-		// Call the super class constructor, then create and set
-		// instance variables for any values that aren't handled
-		// by the base class
-		throw new NotYetImplementedException();
+		super(prompt, answer, points); //super with nothing after calls the constrcuter of the super class
+		this.choices = choices;
 	}
 	
 	/**
@@ -23,7 +21,9 @@ public class MultipleChoiceQuestion extends Question {
 	 * the choices present for the question.
 	 */
 	public void displayPrompt() {
-		throw new NotYetImplementedException();
+		//super.Prompt + "(" + this.choices + "Choices" +super.getPoints()points + " points)");
+		this.displayPrompt();
+		//loop through array
 	}
 	
 	/**
